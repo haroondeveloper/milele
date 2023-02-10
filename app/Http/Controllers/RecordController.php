@@ -29,12 +29,6 @@ class RecordController extends Controller
     }
 
 
-    public function store(Request $request)
-    {
-        $records = Record::where(['supplier' => $request->supplier, 'wholesaler' => $request->wholesaler, 'steering_type' => $request->steering_type])->get();
-
-        return view('records.index', compact('records'));
-    }
 
     public function update(Request $request)
     {
