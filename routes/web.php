@@ -17,8 +17,6 @@ use Illuminate\Support\Facades\Route;
 //    return view('filter');
 //});
 
-Route::post('/filters', 'FilterController@store');
-Route::put('/filters/{id}', 'FilterController@update');
 
 
 Route::get('/', [\App\Http\Controllers\RecordController::class, 'index']);
